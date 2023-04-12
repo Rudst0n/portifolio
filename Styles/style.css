@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+
+
+:root{ 
+  --cor-primaria: #281137;
+  --cor-segundaria: #22D4FD;
+  --cor-terciaria: #F6F6F6;
+  --cor-hover:  rgba(86, 175, 182, 0.356);
+  --cor-sombra: rgb(134, 133, 133);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    /* height: 100vh;  serva para utilizar a pagina inteira*/ 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: #F6F6F6;
+}
+
+.texto__em__destaque{
+    color: var(--cor-segundaria);
+}
+
+.cabecalho{
+    padding: 3% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+
+}
+.cabecalho__menu__link{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--cor-segundaria);
+    text-decoration: none;
+
+}
+
+
+.apresentacao{
+    display: flex;
+    margin: 10% 15% ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 84px;
+}
+
+.apresentacao__conteudo{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem; 
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1rem;
+    font-family: 'Kalam', cursive;
+
+}
+
+.apresentacao__conteudo__curriculo{
+    font-size: 1.25rem;
+    display: flex;
+    margin: 10% 15% ;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.apresentacao__conteudo__subtitulo{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: var(--cor-segundaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+
+}
+
+
+.apresentacao__de__botoes{
+     display: flex; justify-content: center;
+     gap: 10px;
+     border: 2px  solid var(--cor-terciaria);
+     width: 50%;
+     text-align: center;
+     border-radius: 10px  0   ;
+     font-size: 1.25rem;
+     padding: 21.5px, 0;
+     color: var(--cor-segundaria);
+     box-shadow: 5px 10px var(--cor-sombra);
+     
+
+}
+
+.apresentacao__de__botoes:hover{
+    background-color: var(--cor-hover);
+    padding: 3px;
+
+
+}
+
+.apresentacao__imagem{
+    width: 50%;
+    
+
+}
+
+.rodape{
+    display: flex; justify-content: center;
+    font-size: 1.25rem;
+    background-color: var(--cor-segundaria);
+    color: black; 
+    padding: 1%;
+    border-radius: 0 100% 0 100%;
+    font-weight: 400;
+   
+    
+    
+    
+}
+
+@media (max-width: 1000px ){
+    .cabecalho{
+        padding: 10%;
+ 
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+
+}
